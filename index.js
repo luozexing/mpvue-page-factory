@@ -12,7 +12,7 @@ function callHook$1(vm, hook, params) {
       try {
         ret = handlers[i].call(vm, params);
       } catch (e) {
-        handleError(e, vm, (hook + " hook"));
+        throw(e);
       }
     }
   }
