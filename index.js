@@ -70,7 +70,7 @@ export default function (App) {
     },
 
     // 生命周期函数--监听页面显示
-    onShow() {
+    onShow: function onShow() {
       var rootVueVM = getRootVueVm(this);
       var mp = rootVueVM.$mp;
       mp.status = 'show';
@@ -82,7 +82,7 @@ export default function (App) {
     },
 
     // 生命周期函数--监听页面初次渲染完成
-    onReady() {
+    onReady: function onReady() {
       var rootVueVM = getRootVueVm(this);
       var mp = rootVueVM.$mp;
       mp.status = 'ready';
