@@ -43,7 +43,7 @@ export default function (App) {
 
     // mp lifecycle for vue
     // 生命周期函数--监听页面加载
-    onLoad(query) {
+    onLoad: function onLoad(query) {
       //页面加载的时候
       const app = new Vue(App);
       // 挂载Vue对象到page上
